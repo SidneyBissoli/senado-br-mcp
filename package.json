@@ -1,0 +1,74 @@
+{
+  "name": "senado-br-mcp",
+  "version": "1.1.0",
+  "description": "MCP server for Brazilian Federal Senate open data (legislators, bills, votes, committees)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "senado-br-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm --external:pino --external:pino-pretty",
+    "build:server": "esbuild src/server.ts --bundle --platform=node --target=node18 --outfile=dist/server.js --format=esm --external:pino --external:pino-pretty",
+    "build:all": "npm run build && npm run build:server",
+    "start": "node dist/index.js",
+    "start:server": "node dist/server.js",
+    "dev": "tsx src/index.ts",
+    "dev:server": "tsx src/server.ts",
+    "inspect": "npx @modelcontextprotocol/inspector dist/index.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "senado",
+    "brasil",
+    "brazil",
+    "senate",
+    "legislativo",
+    "legislative",
+    "dados-abertos",
+    "open-data",
+    "claude",
+    "anthropic",
+    "ai",
+    "llm"
+  ],
+  "author": "Sidney da Silva Pereira Bissoli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SidneyBissoli/senado-br-mcp.git"
+  },
+  "homepage": "https://github.com/SidneyBissoli/senado-br-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/SidneyBissoli/senado-br-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "cheerio": "^1.0.0",
+    "express": "^4.18.0",
+    "node-cache": "^5.1.2",
+    "zod": "^3.23.0",
+    "pino": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0",
+    "esbuild": "^0.21.0",
+    "typescript": "^5.4.0",
+    "tsx": "^4.0.0",
+    "eslint": "^8.57.0",
+    "pino-pretty": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

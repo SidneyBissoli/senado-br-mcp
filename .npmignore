@@ -1,0 +1,27 @@
+# Source files
+src/
+tsconfig.json
+esbuild.config.js
+
+# Development
+.claude/
+.vscode/
+.idea/
+
+# Specifications
+SPECIFICATION_*.md
+
+# Git
+.git/
+.gitignore
+
+# Tests
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Misc
+*.log
+.DS_Store
+Thumbs.db
