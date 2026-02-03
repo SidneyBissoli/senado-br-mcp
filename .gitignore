@@ -34,3 +34,6 @@ coverage/
 
 # R
 .Rhistory
+
+# MCP Registry
+.mcpregistry_github_token
