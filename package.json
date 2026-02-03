@@ -14,7 +14,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=cjs --external:pino --external:pino-pretty",
+   "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=cjs --external:pino --external:pino-pretty && esbuild src/server.ts --bundle --platform=node --target=node18 --outfile=dist/server.js --format=cjs --external:pino --external:pino-pretty",
     "build:server": "esbuild src/server.ts --bundle --platform=node --target=node18 --outfile=dist/server.js --format=cjs --external:pino --external:pino-pretty",
     "build:all": "npm run build && npm run build:server",
     "start": "node dist/index.js",
