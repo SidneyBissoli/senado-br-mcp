@@ -40,12 +40,7 @@ app.use(express.json());
 
 // Health check endpoint
 app.get('/health', (_req: Request, res: Response) => {
-  res.json({
-    status: 'ok',
-    service: 'senado-br-mcp',
-    version: '1.0.0',
-    timestamp: new Date().toISOString()
-  });
+  res.status(200).send('OK');
 });
 
 // Usage stats endpoint
