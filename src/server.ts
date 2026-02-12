@@ -147,7 +147,7 @@ app.get('/', (_req: Request, res: Response) => {
     documentation: 'https://github.com/SidneyBissoli/senado-br-mcp',
     usage: {
       claude_desktop: {
-        url: `https://senado-br-mcp.up.railway.app/mcp`,
+        url: `https://web-production-e32f8.up.railway.app/mcp`,
         instructions: 'Add as custom connector in Claude Desktop settings'
       },
       npm: {
