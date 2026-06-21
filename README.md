@@ -1,5 +1,12 @@
 # Senado Brasil MCP Server
 
+[![npm version](https://img.shields.io/npm/v/senado-br-mcp.svg)](https://www.npmjs.com/package/senado-br-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/senado-br-mcp.svg)](https://www.npmjs.com/package/senado-br-mcp)
+[![node](https://img.shields.io/node/v/senado-br-mcp)](https://www.npmjs.com/package/senado-br-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+[![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/senado-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/senado-br-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 MCP server for Brazilian Federal Senate open data (legislators, bills, votes, committees).
 
 Servidor MCP (Model Context Protocol) que permite acesso estruturado aos dados abertos do Senado Federal do Brasil, democratizando o acesso a informações legislativas através de conversas com IA.
