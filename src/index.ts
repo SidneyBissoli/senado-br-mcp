@@ -10,10 +10,11 @@ import { registerComissoesTools } from './tools/comissoes.js';
 import { registerAgendaTools } from './tools/agenda.js';
 import { registerAuxiliaresTools } from './tools/auxiliares.js';
 import { registerEcidadaniaTools } from './tools/ecidadania/index.js';
+import { registerResourcesAndPrompts } from './resources-prompts.js';
 
 const server = new McpServer({
   name: 'senado-br-mcp',
-  version: '1.1.6',
+  version: '1.2.0',
 });
 
 // Register all tools
@@ -24,6 +25,7 @@ registerComissoesTools(server);
 registerAgendaTools(server);
 registerAuxiliaresTools(server);
 registerEcidadaniaTools(server);
+registerResourcesAndPrompts(server);
 
 async function main() {
   logger.info('Starting senado-br-mcp server...');

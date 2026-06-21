@@ -1,7 +1,7 @@
 {
   "identifier": "sidneybissoli-senado-br-mcp",
   "name": "Senado Brasil MCP",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "MCP server for the Brazilian Federal Senate open data (Dados Abertos): senators, bills, votes, committees, agenda and e-Cidadania participation.",
   "author": "Sidney Bissoli",
   "authorUrl": "https://github.com/SidneyBissoli",
@@ -249,6 +249,28 @@
       "inputSchema": {
         "type": "object"
       }
+    }
+  ],
+  "resources": [
+    {
+      "name": "tipos-materia",
+      "uri": "senado://tipos-materia",
+      "description": "Catalog of legislative matter types (PEC, PL, PLP, MPV, ...) with full names."
+    },
+    {
+      "name": "ufs",
+      "uri": "senado://ufs",
+      "description": "The 27 federation units represented in the Senate, with abbreviation, name and region."
+    }
+  ],
+  "prompts": [
+    {
+      "name": "panorama_senador",
+      "description": "Build an overview of a senator: identity, mandate, committees and recent votes."
+    },
+    {
+      "name": "acompanhar_materia",
+      "description": "Track a legislative matter: current status, processing history and available texts."
     }
   ]
 }

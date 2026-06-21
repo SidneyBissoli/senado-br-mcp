@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-06-21
+
+### Added
+- **MCP resources**: `senado://tipos-materia` (legislative matter types) and `senado://ufs` (the 27 federation units with region).
+- **MCP prompts**: `panorama_senador` (overview of a senator) and `acompanhar_materia` (track a bill's status and history).
+
+
 ## [1.1.6] - 2026-06-21
 
 Supply-chain hardening release (no functional changes).
