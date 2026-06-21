@@ -1,4 +1,4 @@
-# Senado BR MCP Server
+# Senado Brasil MCP Server
 
 MCP server for Brazilian Federal Senate open data (legislators, bills, votes, committees).
 
