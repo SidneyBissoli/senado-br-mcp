@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.SidneyBissoli/senado-br-mcp",
+  "description": "MCP Server for Brazilian Federal Senate open data (legislators, bills, votes)",
+  "repository": {
+    "url": "https://github.com/SidneyBissoli/senado-br-mcp",
+    "source": "github"
+  },
+  "version": "1.1.6",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "senado-br-mcp",
+      "version": "1.1.6",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

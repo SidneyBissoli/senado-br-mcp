@@ -13,7 +13,7 @@ import { registerEcidadaniaTools } from './tools/ecidadania/index.js';
 
 const server = new McpServer({
   name: 'senado-br-mcp',
-  version: '1.0.0',
+  version: '1.1.6',
 });
 
 // Register all tools

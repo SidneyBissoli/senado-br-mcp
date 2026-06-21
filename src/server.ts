@@ -19,7 +19,7 @@ const PORT = parseInt(process.env.PORT || '3000');
 function createMcpServer(): McpServer {
   const server = new McpServer({
     name: 'senado-br-mcp',
-    version: '1.0.0',
+    version: '1.1.6',
   });
 
   // Register all tools
@@ -138,7 +138,7 @@ app.get('/', (_req: Request, res: Response) => {
   res.json({
     name: 'senado-br-mcp',
     description: 'MCP server for Brazilian Federal Senate open data',
-    version: '1.0.0',
+    version: '1.1.6',
     endpoints: {
       mcp: '/mcp',
       health: '/health',
