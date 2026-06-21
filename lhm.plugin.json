@@ -1,0 +1,254 @@
+{
+  "identifier": "sidneybissoli-senado-br-mcp",
+  "name": "Senado Brasil MCP",
+  "version": "1.1.6",
+  "description": "MCP server for the Brazilian Federal Senate open data (Dados Abertos): senators, bills, votes, committees, agenda and e-Cidadania participation.",
+  "author": "Sidney Bissoli",
+  "authorUrl": "https://github.com/SidneyBissoli",
+  "homepage": "https://github.com/SidneyBissoli/senado-br-mcp",
+  "icon": "🏛️",
+  "category": "government",
+  "tags": [
+    "senado",
+    "senate",
+    "brazil",
+    "legislative",
+    "politics",
+    "open-data",
+    "dados-abertos",
+    "e-cidadania"
+  ],
+  "tools": [
+    {
+      "name": "senado_listar_senadores",
+      "description": "List senators in office or for a given legislature; filter by state and party.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_obter_senador",
+      "description": "Get detailed info on a senator: biography, mandates and committees.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_buscar_senador_por_nome",
+      "description": "Search senators by name (when you don't have the code).",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_votacoes_senador",
+      "description": "List a senator's votes, showing how they voted on each matter.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_buscar_materias",
+      "description": "Search legislative matters by type (PEC, PL, PLP, MPV), number, year, keywords, author or rapporteur.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_obter_materia",
+      "description": "Get full details of a legislative matter: summary, authorship, current status, rapporteur.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_tramitacao_materia",
+      "description": "Get a matter's processing history in chronological order.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_textos_materia",
+      "description": "Get a matter's available texts (initial, substitute, final) with download URLs.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_votos_materia",
+      "description": "Get a matter's voting results, including tally and nominal votes when available.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_listar_votacoes",
+      "description": "List Senate floor votes by year; filter by month or period.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_obter_votacao",
+      "description": "Get details of a specific vote, including each senator's nominal vote.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_votacoes_recentes",
+      "description": "Get the most recent floor votes (last N days).",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_listar_comissoes",
+      "description": "List Senate committees; filter by type (permanent, temporary, CPI, joint) and status.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_obter_comissao",
+      "description": "Get committee details, including chair, vice-chair and purpose.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_membros_comissao",
+      "description": "List current committee members and their roles.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_reunioes_comissao",
+      "description": "List a committee's scheduled or held meetings with date, time, place and agenda.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_agenda_plenario",
+      "description": "Get the Senate floor session agenda, including matters to be voted.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_agenda_comissoes",
+      "description": "Get the committee meeting agenda; filter by date and committee.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_legislatura_atual",
+      "description": "Return info on the current legislature (number, period, start/end dates).",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_tipos_materia",
+      "description": "List valid legislative matter types with acronym, full name and description.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_partidos",
+      "description": "List parties currently represented in the Senate with seat counts.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ufs",
+      "description": "List federation units with the number of senators currently in office per state.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_listar_consultas",
+      "description": "List e-Cidadania public consultations with citizen voting on matters in progress.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_obter_consulta",
+      "description": "Get details of a public consultation, including votes, author and comments.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_consultas_polarizadas",
+      "description": "Return consultations with balanced (~50/50) voting - polarized topics.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_consultas_consensuais",
+      "description": "Return consultations with high agreement (>85%) - consensus topics.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_listar_eventos",
+      "description": "List interactive e-Cidadania events (public hearings, sabatinas, lives).",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_obter_evento",
+      "description": "Get details of an interactive event, including agenda, guests and video link.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_eventos_populares",
+      "description": "Return events with the most citizen comments and questions.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_listar_ideias",
+      "description": "List legislative ideas proposed by citizens on e-Cidadania.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_obter_ideia",
+      "description": "Get details of a legislative idea, including support and whether it became a bill.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_ideias_populares",
+      "description": "Return the most-supported citizen legislative ideas.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "senado_ecidadania_sugerir_tema_enquete",
+      "description": "Analyze and suggest monthly poll themes, avoiding overly polarized or fully consensual topics.",
+      "inputSchema": {
+        "type": "object"
+      }
+    }
+  ]
+}
