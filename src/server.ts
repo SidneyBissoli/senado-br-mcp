@@ -13,6 +13,7 @@ import { registerAuxiliaresTools } from './tools/auxiliares.js';
 import { registerEcidadaniaTools } from './tools/ecidadania/index.js';
 import { registerResourcesAndPrompts } from './resources-prompts.js';
 import { checkMonthlyLimit, incrementCounter, getUsageStats } from './middleware/rateLimiter.js';
+import pkg from '../package.json';
 
 const PORT = parseInt(process.env.PORT || '3000');
 
@@ -20,7 +21,7 @@ const PORT = parseInt(process.env.PORT || '3000');
 function createMcpServer(): McpServer {
   const server = new McpServer({
     name: 'senado-br-mcp',
-    version: '1.2.0',
+    version: pkg.version,
   });
 
   // Register all tools
@@ -140,7 +141,7 @@ app.get('/', (_req: Request, res: Response) => {
   res.json({
     name: 'senado-br-mcp',
     description: 'MCP server for Brazilian Federal Senate open data',
-    version: '1.2.0',
+    version: pkg.version,
     endpoints: {
       mcp: '/mcp',
       health: '/health',

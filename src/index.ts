@@ -11,10 +11,11 @@ import { registerAgendaTools } from './tools/agenda.js';
 import { registerAuxiliaresTools } from './tools/auxiliares.js';
 import { registerEcidadaniaTools } from './tools/ecidadania/index.js';
 import { registerResourcesAndPrompts } from './resources-prompts.js';
+import pkg from '../package.json';
 
 const server = new McpServer({
   name: 'senado-br-mcp',
-  version: '1.2.0',
+  version: pkg.version,
 });
 
 // Register all tools
