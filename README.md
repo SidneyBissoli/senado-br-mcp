@@ -7,6 +7,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/senado-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/senado-br-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+🇧🇷 [Leia em Português](README.pt-BR.md)
+
 MCP server for Brazilian Federal Senate open data (legislators, bills, votes, committees).
 
 Servidor MCP (Model Context Protocol) que permite acesso estruturado aos dados abertos do Senado Federal do Brasil, democratizando o acesso a informações legislativas através de conversas com IA.
