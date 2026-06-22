@@ -11,6 +11,16 @@ MCP server for Brazilian Federal Senate open data (legislators, bills, votes, co
 
 Servidor MCP (Model Context Protocol) que permite acesso estruturado aos dados abertos do Senado Federal do Brasil, democratizando o acesso a informações legislativas através de conversas com IA.
 
+## See it in action
+
+Ask your assistant, in plain Portuguese:
+
+- *"Liste os senadores de SP em exercício."* → `senado_listar_senadores`
+- *"Mostre a tramitação da PEC 45/2019."* → `senado_buscar_materias` + `senado_obter_materia`
+- *"Quais ideias legislativas mais apoiadas estão abertas no e-Cidadania?"* → `senado_ecidadania_listar_ideias`
+
+The answers come live from the Senate's official open-data APIs — real data with provenance, not numbers guessed from training data.
+
 ## Features
 
 - **33 tools** for accessing Senate data
