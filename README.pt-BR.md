@@ -5,6 +5,7 @@
 [![node](https://img.shields.io/node/v/senado-br-mcp)](https://www.npmjs.com/package/senado-br-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 [![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/senado-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/senado-br-mcp)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/SidneyBissoli?logo=githubsponsors&label=Sponsor&color=db61a2)](https://github.com/sponsors/SidneyBissoli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 🇺🇸 [Read in English](README.md)
