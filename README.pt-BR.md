@@ -1,3 +1,13 @@
+> # ⚠️ Descontinuado — este repositório foi movido
+>
+> Este servidor **não é mais mantido aqui.** O servidor MCP do Senado Federal agora vive em
+> **[senado-br-mcp-cloudflare](https://github.com/SidneyBissoli/senado-br-mcp-cloudflare)** — **66 ferramentas**
+> com **proveniência** nível-1, disponível **hospedado** (`https://senado.sidneybissoli.com/mcp`, sem configuração)
+> e via **npm/stdio** (`npx senado-br-mcp`, v3.x). O pacote npm **`senado-br-mcp` agora publica esse servidor**
+> (v3.2.1+); versões `< 3.0.0` aqui estão descontinuadas. Migre, por favor — este repositório está arquivado.
+
+---
+
 # Senado Brasil MCP Server
 
 [![npm version](https://img.shields.io/npm/v/senado-br-mcp.svg)](https://www.npmjs.com/package/senado-br-mcp)

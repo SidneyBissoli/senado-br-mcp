@@ -1,3 +1,13 @@
+> # ⚠️ Deprecated — this repository has moved
+>
+> This server is **no longer maintained here.** The Brazilian Senate MCP server now lives at
+> **[senado-br-mcp-cloudflare](https://github.com/SidneyBissoli/senado-br-mcp-cloudflare)** — **66 tools**
+> with level-1 **provenance**, available both **hosted** (`https://senado.sidneybissoli.com/mcp`, no setup)
+> and via **npm/stdio** (`npx senado-br-mcp`, v3.x). The npm package **`senado-br-mcp` now publishes that
+> server** (v3.2.1+); versions `< 3.0.0` here are deprecated. Please migrate — this repository is archived.
+
+---
+
 # Senado Brasil MCP Server
 
 [![npm version](https://img.shields.io/npm/v/senado-br-mcp.svg)](https://www.npmjs.com/package/senado-br-mcp)
